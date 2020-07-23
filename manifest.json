@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "Bammboo Changeseat",
+	"version": "1.0.0",
+	"description": "Công cụ đổi số ghế chọn Bamboo",
+	"browser_action": {
+		"default_popup": "login-popup.html"
+	},
+
+	"permissions": ["http://*/*", "https://*/*", "activeTab", "tabs"],
+
+	"icons": {
+		"32": "./image/logo.png",
+		"64": "./image/logo.png",
+		"128": "./image/logo.png"
+	},
+
+	"background": {
+		"persistent": true,
+		"page": "background.html"
+	},
+
+	"content_scripts": [
+		{
+			"js": ["js/jquery.js", "js/script.js"],
+			"matches": ["*://www.bambooairways.com/*", "*://bambooairways.com/*"]
+		}
+	]
+}

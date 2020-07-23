@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Tool Bamboo</title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<script type="text/javascript" src="./js/jquery.js"></script>
+		<script type="text/javascript" src="./js/login-popup.js"></script>
+	</head>
+
+	<body style="width: 400px; padding-top: 15px; padding-bottom: 15px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3 style="text-align: center; padding-bottom: 15px;">Thay đổi số ghế trong đặt vé BB</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<label>Số người lớn</label>
+					<input type="number" min="1" step="1" class="form-control" value="1" id="nguoi-lon" />
+				</div>
+				<div class="col-xs-6">
+					<label>Số trẻ em</label>
+					<input type="number" min="0" step="1" class="form-control" value="0" id="tre-em" />
+				</div>
+			</div>
+			<div class="row" style="padding-top: 10px;">
+				<div class="col-xs-6">
+					<button class="btn btn-primary" id="change">Thay đổi</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
